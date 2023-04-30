@@ -1,0 +1,41 @@
+.home-container {
+    border: 2px solid navy;
+    padding: 10px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: minmax(100px, auto);
+    gap: 5px;
+    grid-template-areas:
+        "top top top"
+        "ls center rs"
+        ". ft .";
+}
+
+.home-container div {
+    font-size: 24px;
+    border: 1px solid black;
+    background-color: gray;
+    padding: 10px;
+}
+
+.header {
+    grid-area: top;
+    text-align: center;
+}
+
+.main {
+    grid-area: center;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.left-sidebar {
+    grid-area: ls;
+}
+
+.right-sidebar {
+    grid-area: rs;
+}
