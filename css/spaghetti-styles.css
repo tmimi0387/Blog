@@ -1,3 +1,4 @@
+/* Entire Body */
 .blog-container {
     border: 2px solid navy;
     padding: 10px;
@@ -19,6 +20,20 @@
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: #1FB6FF;
+}
+
+a:hover {
+    color: #009EEB;
+}
+
+a:checked {
+    color: #009EEB;
+}
+
+/* Header */
 .header {
     grid-area: hd;
     text-align: center;
@@ -30,14 +45,23 @@
     justify-content: space-around;
 }
 
-.main {
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main Content */
+main {
     grid-area: center;
 }
 
-.footer {
-    grid-area: ft;
-}
-
+/* Left Sidebar */
 .left-sidebar {
     grid-area: ls;
+}
+
+/* Footer */
+.footer {
+    grid-area: ft;
 }
