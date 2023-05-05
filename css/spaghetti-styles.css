@@ -1,10 +1,10 @@
 /* Entire Body */
 .blog-container {
-    border: 2px solid navy;
+    border: 2px solid #000080;
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: #f9fafc;
     display: grid;
-    grid-template-columns: 350px 1fr 350px;
+    grid-template-columns: 300px 1fr 350px;
     grid-template-rows: minmax(100px, 1fr, 50px);
     gap: 5px;
     grid-template-areas:
@@ -13,24 +13,23 @@
         "ft ft ft";
 }
 
-.blog-container div {
-    font-size: 24px;
-    border: 1px solid black;
-    background-color: lightgray;
-    padding: 10px;
-}
-
 a {
     text-decoration: none;
-    color: #1FB6FF;
+    color: #1fb6ff;
 }
 
 a:hover {
-    color: #009EEB;
+    color: #009eeb;
 }
 
 a:checked {
-    color: #009EEB;
+    color: #009eeb;
+}
+
+.header,
+footer,
+main {
+    border: 1px solid #d3dce6;
 }
 
 /* Header */
@@ -42,18 +41,72 @@ a:checked {
 .nav {
     grid-area: nav;
     text-align: right;
-    justify-content: space-around;
 }
 
 .nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    float: right;
+}
+
+.nav ul li {
+    padding: 10px;
 }
 
 /* Main Content */
 main {
     grid-area: center;
+}
+
+.top img {
+    width: 300px;
+    margin: 0 10px;
+    float: left;
+}
+
+p {
+    font-size: 1.25em;
+    color: #3c4858;
+    margin: 5px 15px;
+    text-align: justify;
+}
+
+.first-letter {
+    font: 35px 'Clicker Script', cursive;
+    background-color: #fff0c8;
+    color: #7e5bef;
+
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lists {
+    border: 1px solid #85d7ff;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 3px 6px #85d7ff;
+    margin: 35px auto;
+    background-color: #eff2f7;
+}
+
+.lists li {
+    font-size: 1em;
+    padding: 0.25em;
+}
+
+.picture {
+    margin: 5px auto;
+    width: fit-content;
 }
 
 /* Left Sidebar */
@@ -62,6 +115,6 @@ main {
 }
 
 /* Footer */
-.footer {
+footer {
     grid-area: ft;
 }
