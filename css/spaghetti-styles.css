@@ -5,10 +5,10 @@
     background-color: #f9fafc;
     display: grid;
     grid-template-columns: 300px 1fr 350px;
-    grid-template-rows: minmax(100px, 1fr, 50px);
+    grid-template-rows: 350px, 1fr, 50px;
     gap: 5px;
     grid-template-areas:
-        "hd hd nav"
+        "hd hd hd"
         "ls center center "
         "ft ft ft";
 }
@@ -19,11 +19,11 @@ a {
 }
 
 a:hover {
-    color: #009eeb;
+    color: #0184c5;
 }
 
 a:checked {
-    color: #009eeb;
+    color: #0184c5;
 }
 
 .header,
@@ -39,7 +39,7 @@ main {
 }
 
 .nav {
-    grid-area: nav;
+    float: right;
     text-align: right;
 }
 
@@ -88,6 +88,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.list-name {
+    font: italic small-caps 30px Georgia, serif;
+    text-align: center;
 }
 
 .lists {

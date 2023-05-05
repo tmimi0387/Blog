@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="Chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/spaghetti-styles.css">
+    <link rel="stylesheet" href="css/home-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
@@ -12,21 +13,38 @@
 </head>
 <body>
     <div class="blog-container">
+        <!-- Header section -->
         <div class="header">
-            <h1>Amazing Spaghetti</h1>
-        </div>
+            <h1>My amazing spaghetti recipe with sausage</h1>
+            <h2>Make it for a few or a large crowd, either way it will taste amazing.</h2>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
 
-        <div class="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-
-                <!--TODO add a subscribe page with subscription form-->
-                <li><a href="default.html">Subscribe</a></li>
-            </ul>
+                    <!--TODO add a subscribe page with subscription form -->
+                    <li><a href="default.html">Subscribe</a></li>
+                </ul>
+            </div>
         </div>
     
+        <!-- Author info and additional articles -->
         <div class="left-sidebar">
-            <p>Left Sidebar</p>
+            <!-- Author info -->
+            <div class="name">
+                <img class="bio" src="pictures/avatar.jpg" alt="grinning picture of me">
+                <h3 class="bio">Tamisha Cauley</h3>
+                <p>Front End Web Developer</p>
+                <br>
+                <p>Being the mother of seven children, and wife to a self-proclaimed foodie, I am always cooking. Spending a lot of time with both my immediate and extended family as well as the many Italian families that lived near me as a child, cooking became a passion of mine. That is how this blog came to be. I can mix that passion of feeding others with my burning desire to be a front end web developer. You, my lovelies, get to enjoy all the recipes I've learned along the years while I get the satisfaction of building this website from scratch.</p>
+            </div>
+            <!-- Links to other articles -->
+            <div class="links">
+                <p>More from Me</p>
+                <a href="default.asp">Creamy Pasta and Broccoli</a>
+                <a href="default.asp">Baked Macaroni</a>
+                <a href="default.asp">Chicken Parmesan</a>
+            </div>
         </div>
     
         <main>
@@ -45,10 +63,12 @@
                 </p>
             </section>
 
+            <!-- container for my flexbox items -->
             <section class="flex-list">
                 <div class="lists center">
+
                     <!--unordered list for ingredients-->
-                    <p class="list-name">Ingredients</p>
+                    <h3 class="list-name">Ingredients</h3>
                     <ul>
                         <li>1 lb ground beef or turkey</li>
                         <li>1/2 pound ground italian sausage</li>
@@ -67,7 +87,7 @@
                 </div>
                     
                 <div class="lists center">
-                    <p class="list-name">Directions</p>
+                    <h3 class="list-name">Directions</h3>
                     <ol>
                         <li>Add oil to a heated skillet</li>
                         <li>Add fennel seeds to oil and cook for one minute (Cooking dried fennel seeds in oil releases the flavor!)</li>
