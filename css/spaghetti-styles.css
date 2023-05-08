@@ -33,11 +33,6 @@ main {
 }
 
 /* Header */
-.header {
-    grid-area: hd;
-    text-align: center;
-}
-
 .nav {
     float: right;
     text-align: right;
@@ -56,6 +51,11 @@ main {
 /* Main Content */
 main {
     grid-area: center;
+}
+
+.title {
+    grid-area: hd;
+    text-align: center;
 }
 
 .top img {
@@ -117,6 +117,60 @@ p {
 /* Left Sidebar */
 .left-sidebar {
     grid-area: ls;
+}
+
+.name img {
+    width: 125px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.name p:first-of-type {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.name p {
+    font-size: 0.95em;
+}
+
+.name h3 {
+    margin-bottom: 0;
+}
+
+.bio {
+    margin-left: 12px;
+}
+
+h1,
+h2 {
+    text-align: left;
+    margin-left: 10px;
+    margin: 0;
+    margin-left: 75px;
+}
+
+.links {
+    margin-top: 100px;
+}
+
+.links p {
+    text-align: center;
+}
+
+.last-span {
+    font: 24px 'Kalam', cursive;
+}
+
+/* For some reason auto spacing isn't working 
+so I centered it by using 45px on the left only */
+.links ul {
+    list-style-type: none;
+    margin: 5px 45px 0 0;
+}
+
+.links ul li {
+    text-align: center;
 }
 
 /* Footer */

@@ -70,6 +70,10 @@
     margin-left: 12px;
 }
 
+.links p {
+    padding: 10px auto 0;
+}
+
 h1,
 h2 {
     text-align: left;
