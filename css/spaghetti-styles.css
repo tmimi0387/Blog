@@ -4,12 +4,12 @@
     padding: 10px;
     background-color: #f9fafc;
     display: grid;
-    grid-template-columns: 300px 1fr 350px;
-    grid-template-rows: 350px, 1fr, 50px;
+    grid-template-columns: 350px 1fr 300px;
+    grid-template-rows: 300px, 1fr, 50px;
     gap: 5px;
     grid-template-areas:
-        "hd hd hd"
-        "ls center center "
+        ". hd hd"
+        "center center rs"
         "ft ft ft";
 }
 
@@ -33,6 +33,41 @@ main {
 }
 
 /* Header */
+.info {
+    display: flex;
+    width: 50%;
+    float: left;
+    justify-items: center;
+}
+
+.social {
+    display: flex;
+    color:#3c4858;
+}
+
+.share ul {
+    margin-top: 10px;
+    float: right;
+}
+
+.share li {
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+.share span {
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.top-avatar {
+    grid-area: hd;
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+}
+
 .nav {
     float: right;
     text-align: right;
@@ -54,8 +89,8 @@ main {
 }
 
 .title {
-    grid-area: hd;
-    text-align: center;
+    margin: 5px 0 45px;
+    text-align: left;
 }
 
 .top img {
@@ -64,7 +99,7 @@ main {
     float: left;
 }
 
-p {
+main p {
     font-size: 1.25em;
     color: #3c4858;
     margin: 5px 15px;
@@ -114,12 +149,12 @@ p {
     width: fit-content;
 }
 
-/* Left Sidebar */
-.left-sidebar {
-    grid-area: ls;
+/* Right Sidebar */
+.right-sidebar {
+    grid-area: rs;
 }
 
-.name img {
+.right-avatar {
     width: 125px;
     height: 120px;
     border-radius: 50%;
@@ -132,6 +167,8 @@ p {
 
 .name p {
     font-size: 0.95em;
+    margin: 5px 10px;
+    color: #3c4858;
 }
 
 .name h3 {
@@ -140,14 +177,6 @@ p {
 
 .bio {
     margin-left: 12px;
-}
-
-h1,
-h2 {
-    text-align: left;
-    margin-left: 10px;
-    margin: 0;
-    margin-left: 75px;
 }
 
 .links {
