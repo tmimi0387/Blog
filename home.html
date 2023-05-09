@@ -4,35 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Homepage</title>
-    <link rel="stylesheet" href="css/home-styles.css">
+    <title>Coding and Cooking</title>
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body>
-    <div class="home-container">
-        <div class="header">
-            <h1>My Blog</h1>
-        </div>
-
-        <div class="nav">
-            <h1>nav</h1>
-        </div>
-    
-        <div class="left-sidebar">
-            <p>Left Sidebar</p>
-        </div>
-
-        <div class="right-sidebar">
-            <p>Right Sidebar</p>
-        </div>
-    
-        <div class="main">
-            <p>Main</p>
-        </div>
-    
-        <div class="footer">
-            <p>Footer</p>
-        </div>
+<body class="home-container">
+    <!-- HEADER SECTION -->
+    <div class="header">
+        <h1>Coding and Cooking</h1>
     </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li></li>
+            <li><a href="default.html">Subscribe</a></li>
+        </ul>
+    </div>
+
+    <!-- LEFT SIDEBAR -->
+    <section class="left-sidebar name">
+        <!-- Avatar and author info -->
+        <img class="bio right-avatar" src="images/avatar.jpg" alt="grinning picture of me">
+        <h3 class="bio">Tamisha Cauley</h3>
+        <p>Front End Web Developer</p>
+        <p>Udacity | OneTen</p>
+        <br>
+        <p>Being the mother of seven children, and wife to a self-proclaimed foodie, I am always cooking. Spending a lot of time with both my immediate and extended family as well as the many Italian families that lived near me as a child, cooking became a passion of mine. That is how this blog came to be. I can mix that passion of feeding others with my burning desire to be a front end web developer. You, my lovelies, get to enjoy all the recipes I've learned along the years while I get the satisfaction of building this website from scratch.</p>
+    </section>
+    
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- Container for cards -->
+        <section class="card-container">
+            <div class="card">
+                <img src="images/baked-mac-n-cheese.jpeg" alt="baked macaroni and cheese">
+                <div class="container">
+                    <h3>Southern Baked Macaroni and Cheese</h3>
+                    <p>default...<a href="macaroni.html">Read More</a></p>
+                </div>
+            </div> 
+            <div class="card">
+                <img src="images/home-spaghetti.jpg" alt="spaghetti">
+                <div class="container">
+                    <h3>Wickedly Good Spagehtti with Sausage</h3>
+                    <p>This is my go to meal for my family when I'm in a rush, but also want to make something hearty. Originally, this was my husband's recipe...<a href="spaghetti.html">Read More</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/chicken-parm.jpg" alt="chicken parmesan">
+                <div class="container">
+                    <h3>Easy Chicken Parmesan</h3>
+                    <p>default...<a href="chicken-parm.html">Read More</a></p>
+                </div>
+            </div> 
+        </section>
+    </main>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>Created by Tamisha Cauley &#169 2023</p>
+    </footer>
+    
 </body>
 </html>

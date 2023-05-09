@@ -68,35 +68,28 @@ main {
     border-radius: 50%;
 }
 
-.nav {
-    float: right;
-    text-align: right;
-}
-
-.nav ul {
-    list-style-type: none;
-    display: flex;
-    float: right;
-}
-
-.nav ul li {
-    padding: 10px;
-}
-
 /* Main Content */
-main {
-    grid-area: center;
-}
-
 .title {
     margin: 5px 0 45px;
     text-align: left;
 }
 
-.top img {
-    width: 300px;
-    margin: 0 10px;
+figure {
+    text-align: center;
+    font: italic 0.85em serif;
+    text-indent: 0;
+    border: thin solid #c0c0c0;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.top-figure {
     float: left;
+}
+
+figure img {
+    width: 350px;
+    margin: 0 10px;
 }
 
 main p {
@@ -151,7 +144,7 @@ main p {
 
 /* Right Sidebar */
 .right-sidebar {
-    grid-area: rs;
+    margin-top: 5.5em;
 }
 
 .right-avatar {
@@ -200,9 +193,4 @@ so I centered it by using 45px on the left only */
 
 .links ul li {
     text-align: center;
-}
-
-/* Footer */
-footer {
-    grid-area: ft;
 }
