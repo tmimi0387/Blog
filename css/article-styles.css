@@ -2,63 +2,43 @@
 .blog-container {
     border: 2px solid #000080;
     padding: 10px;
-    background-color: #f9fafc;
+    background-color: #eaeaea;
     display: grid;
     grid-template-columns: 350px 1fr 300px;
-    grid-template-rows: 300px, 1fr, 50px;
-    gap: 5px;
+    grid-template-rows: 200px, 1fr, 50px;
     grid-template-areas:
         ". hd hd"
         "center center rs"
         "ft ft ft";
 }
 
+/* Header */
 a {
     text-decoration: none;
     color: #1fb6ff;
 }
 
 a:hover {
-    color: #0184c5;
+    color: #026ea4;
 }
 
 a:checked {
-    color: #0184c5;
+    color: #026ea4;
 }
 
-.header,
-footer,
-main {
+.article-nav ul li{
+    padding: 20px 10px 0 10px;
+}
+
+/* Main */
+.blog-article {
     border: 1px solid #d3dce6;
+    padding: 2em;
 }
 
-/* Header */
 .info {
     display: flex;
-    width: 50%;
-    float: left;
-    justify-items: center;
-}
-
-.social {
-    display: flex;
-    color:#3c4858;
-}
-
-.share ul {
-    margin-top: 10px;
-    float: right;
-}
-
-.share li {
-    display: inline-block;
-    font-size: 1.1em;
-    padding: 0 10px;
-}
-
-.share span {
-    font-size: 13px;
-    margin-right: 10px;
+    padding: 0.5em;
 }
 
 .top-avatar {
@@ -66,11 +46,37 @@ main {
     width: 75px;
     height: 70px;
     border-radius: 50%;
+    float: left;
+    justify-items: center;
+    margin-left: 3em;
 }
 
-/* Main Content */
+.date {
+    margin-left: 1.4em;
+}
+
+.socials {
+    display: flex;
+    color: #3c4858;
+}
+
+.share ul {
+    margin-top: 5px;
+    float: right;
+}
+
+.share li {
+    display: inline-block;
+    font-size: 1.15em;
+    padding: 0 10px;
+}
+
+.share span {
+    font-size: 0.9em;
+}
+
 .title {
-    margin: 5px 0 45px;
+    margin: 5px 3em 45px;
     text-align: left;
 }
 
@@ -81,6 +87,7 @@ figure {
     border: thin solid #c0c0c0;
     margin: 0.5em;
     padding: 0.5em;
+    width: fit-content;
 }
 
 .top-figure {
@@ -101,8 +108,7 @@ main p {
 
 .first-letter {
     font: 35px 'Clicker Script', cursive;
-    background-color: #fff0c8;
-    color: #7e5bef;
+    color: #00568b;
 
 }
 
@@ -129,7 +135,7 @@ main p {
     width: 400px;
     box-shadow: 3px 6px #85d7ff;
     margin: 35px auto;
-    background-color: #eff2f7;
+    background-color: #eaeaea;
 }
 
 .lists li {
@@ -144,7 +150,8 @@ main p {
 
 /* Right Sidebar */
 .right-sidebar {
-    margin-top: 5.5em;
+    padding-top: 2.5em;
+    border: 1px solid #d3dce6;
 }
 
 .right-avatar {
@@ -173,11 +180,15 @@ main p {
 }
 
 .links {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .links p {
     text-align: center;
+}
+
+.links li {
+    margin: 3px;
 }
 
 .last-span {
