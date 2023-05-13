@@ -4,7 +4,7 @@
     padding: 10px;
     background-color: #eaeaea;
     display: grid;
-    grid-template-columns: 350px 1fr 300px;
+    grid-template-columns: 350px 1fr 350px;
     grid-template-rows: 200px, 1fr, 50px;
     grid-template-areas:
         ". hd hd"
@@ -83,15 +83,20 @@ a:checked {
 figure {
     text-align: center;
     font: italic 0.85em serif;
-    text-indent: 0;
-    border: thin solid #c0c0c0;
+    border: thin solid #afabab;
     margin: 0.5em;
     padding: 0.5em;
     width: fit-content;
 }
 
-.top-figure {
+.left-figure {
     float: left;
+    margin: 1rem;
+}
+
+.right-figure {
+    float: right;
+    margin: 1rem;
 }
 
 figure img {
@@ -100,10 +105,11 @@ figure img {
 }
 
 main p {
-    font-size: 1.25em;
+    font-size: 1.15em;
     color: #3c4858;
-    margin: 5px 15px;
+    margin: 5px 0.5rem;
     text-align: justify;
+    text-indent: 1.75rem;
 }
 
 .first-letter {
