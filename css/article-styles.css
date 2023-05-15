@@ -60,15 +60,19 @@ a:checked {
     color: #3c4858;
 }
 
+.share {
+    margin-left: 2em;
+}
+
 .share ul {
-    margin-top: 5px;
+    margin: 5px;
     float: right;
 }
 
 .share li {
     display: inline-block;
     font-size: 1.15em;
-    padding: 0 10px;
+    padding: 0 5px;;
 }
 
 .share span {
