@@ -1,6 +1,7 @@
 /* Stylesheets */
 @import url(home-styles.css);
 @import url(article-styles.css);
+@import url(form.css);
 
 /* Fonts */
 /* Clicker Script*/
@@ -11,6 +12,9 @@
 
 /* Rye */
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+/* Marienda */
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 /* Social Icons */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);

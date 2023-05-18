@@ -7,12 +7,18 @@
     grid-template-columns: 350px 1fr 350px;
     grid-template-rows: 200px, 1fr, 50px;
     grid-template-areas:
-        ". hd hd"
+        "hd hd hd"
         "center center rs"
         "ft ft ft";
 }
 
 /* Header */
+.article-header h1 {
+    font: 25px 'Rye', cursive;
+    color: #026ea4;
+    padding-left: 1.75em;
+}
+
 a {
     text-decoration: none;
     color: #1fb6ff;
@@ -42,7 +48,6 @@ a:checked {
 }
 
 .top-avatar {
-    grid-area: hd;
     width: 75px;
     height: 70px;
     border-radius: 50%;
@@ -51,17 +56,26 @@ a:checked {
     margin-left: 3em;
 }
 
+.social-date {
+    margin-left: 1em;
+    display: inline-block;
+}
+
+.social-date p {
+    width: 100%;
+}
+
+.social-date span {
+    font: italic small-caps 1.1em Georgia, serif;
+}
+
 .date {
-    margin-left: 1.4em;
+    margin-left: 1em;
 }
 
 .socials {
     display: flex;
     color: #3c4858;
-}
-
-.share {
-    margin-left: 2em;
 }
 
 .share ul {
@@ -73,10 +87,6 @@ a:checked {
     display: inline-block;
     font-size: 1.15em;
     padding: 0 5px;;
-}
-
-.share span {
-    font-size: 0.9em;
 }
 
 .title {
@@ -111,9 +121,9 @@ figure img {
 main p {
     font-size: 1.15em;
     color: #3c4858;
-    margin: 5px 0.5rem;
-    text-align: justify;
+    margin: 5px auto;
     text-indent: 1.75rem;
+    width: 90%;
 }
 
 .first-letter {
@@ -131,7 +141,11 @@ main p {
 .flex-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.checked li {
+    list-style-type: none;
 }
 
 .list-name {
@@ -156,6 +170,13 @@ main p {
 .picture {
     margin: 5px auto;
     width: fit-content;
+}
+
+.full-list {
+    font-size: 1.15em;
+    color: #3c4858;
+    margin: 5px auto;
+    width: 85%;
 }
 
 /* Right Sidebar */
@@ -214,4 +235,175 @@ so I centered it by using 45px on the left only */
 
 .links ul li {
     text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .blog-container {
+        width: 100%;
+        border: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "hd"
+        "nav"
+        "center"
+        "rs"
+        "ft";
+    }
+
+    .blog-article {
+        width: 95%;
+        margin: auto;
+    }
+
+    .right-figure,
+    .left-figure {
+        margin: auto;
+    }
+    
+    figure img {
+        width: 325px;
+        margin: auto;
+    }
+
+    .top-avatar {
+        margin-left: 0.5em;
+    }
+    
+    .social-date {
+        margin-left: 1em;
+        display: inline-block;
+    }
+
+    .share li {
+        font-size: 1em;
+        padding: 0 5px;;
+    }
+    
+    .title {
+        margin: 5px 3em 45px;
+        text-align: left;
+    }
+
+    .social-date span {
+        font: italic small-caps 1em Georgia, serif;
+    }
+    
+    .date {
+        margin-left: 1em;
+        font-size: 0.8em;
+    }
+
+    .title {
+        margin: 5px 0.75em 45px;
+        text-align: left;
+    }
+
+    .right-sidebar {
+        margin: 0.5em;
+        border: 1px solid #d3dce6;
+    }
+
+    .nav {
+        text-align: center;
+    }
+    
+    .nav ul {
+        padding-right: 0.5em;
+    }
+    
+    .nav ul li {
+        padding: 0.25em 0.5em 0 0.3em;
+        font-size: 1.25em;
+    }
+
+    .lists { 
+        width: 300px;
+        margin: 15px auto;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 899px) {
+    .blog-container {
+        width: 100%;
+        border: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        ". hd"
+        "center center"
+        "rs rs"
+        "ft ft";
+    }
+
+    .blog-article {
+        width: 95%;
+        margin: auto;
+    }
+
+    .right-figure {
+        float: right;
+    }
+
+    .left-figure {
+        float: left;
+    }
+    
+    figure img {
+        width: 250px;
+        margin: 0;
+    }
+
+    .top-avatar {
+        margin-left: 0.8em;
+    }
+    
+    .social-date {
+        margin-left: 1.15em;
+        display: inline-block;
+    }
+
+    .share li {
+        font-size: 1em;
+        padding: 0 5px;;
+    }
+    
+    .title {
+        margin: 5px 3em 45px;
+        text-align: left;
+    }
+
+    .social-date span {
+        font: italic small-caps 1.3em Georgia, serif;
+    }
+    
+    .date {
+        margin-left: 1em;
+        font-size: 0.9em;
+    }
+
+    .title {
+        margin: 5px 0.75em 45px;
+        text-align: left;
+    }
+
+    .right-sidebar {
+        margin: 0.5em;
+        border: 1px solid #d3dce6;
+    }
+
+    .nav {
+        text-align: center;
+    }
+    
+    .nav ul {
+        padding-right: 0.5em;
+    }
+    
+    .nav ul li {
+        padding: 0.25em 0.5em 0 0.3em;
+        font-size: 1.25em;
+    }
+
 }
