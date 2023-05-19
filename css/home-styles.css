@@ -152,6 +152,17 @@ main {
     height: 325px;
 }
 
+.read-more {
+    text-align: center;
+}
+
+.read-more button {
+    margin: 1.3em auto;
+    font-size: 0.9em;
+    border: 1px outset #a76666;
+    border-radius: 8px;
+}
+
 /* Footer */
 footer {
     grid-area: ft;
